@@ -113,11 +113,27 @@
 	width: 33vw;
 }
 
+.scrollable-area__navigation-item {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
 .flex-grid__item {
 	justify-content: center;
 }
 
 /*Feature card control*/
+#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard:hover {
+background: #fff !important;
+}
+
+div#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard:hover p, div#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard:hover h2>a {
+color: #000;
+}
+
+
+
 #p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard {
 	max-width: 580px;
 margin: 0 auto;
@@ -140,8 +156,25 @@ font-size: 18px;
 #p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_giBuyTickets {
 font-size: 18px;
 }
+.program-card:hover .program-card__actions .btn {
+background: #000 !important;
+}
+
+.program-card__actions {
+visibility: visible !important;
+}
 
 
+/*card button control*/
+#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_giMoreInfo, #p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_giBuyTickets {
+background: #000;
+color: #fff;
+}
+
+#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_giMoreInfo:hover, #p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_giBuyTickets:hover {
+background: #990d61 !important;
+color: #fff;
+}
 
 
 .line-break {
@@ -179,6 +212,21 @@ header h2,
 margin: 0 auto;
 font-size: 20px;
 }
+
+/*lower card section*/
+/*#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard, #p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard,
+#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard,
+#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard {
+background: #000 !important;
+}
+*/
+
+/*left-bar control*/
+.scrollable-area__navigation--styled-example .scrollable-area__navigation-list {
+margin-bottom: 420px;
+}
+
+
 .js-popup-inline {
 	font-size: 14px;;
 }
@@ -186,11 +234,45 @@ font-size: 20px;
 		position: absolute;
 top: 90px;
 z-index: -1;
+max-width: 370px;
 }
 footer {
 	position: relative;
 	z-index: 1;
 }
+
+.newmark-logo {
+max-width: 300px;
+margin: 0px auto 30px auto;
+display: block;
+}
+
+.newmark-content {
+text-align: center;
+font-weight: 600;
+font-size: 33px;
+margin-bottom: 15px;
+}
+
+/*hide past events cards*/
+#form > div.global-container.has-breadcrumbs > section.page-slice.u-tone-background-white > section > div.stony-wrapper1 > div > div > div.scrollable-area__section-inner.u-tone-background-white > div > div > section:nth-child(1) > div {
+display: none;
+}
+
+#form > div.global-container.has-breadcrumbs > section.page-slice.u-tone-background-white > section > div.stony-wrapper1 > div > div > div.scrollable-area__section-inner.u-tone-background-white > div > div > section:nth-child(1) {
+display: none;
+}
+
+/*hide buy now button*/
+#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_giBuyTickets {
+display: none;
+}
+
+/*center belfar logo*/
+.belfar-logo {
+	margin: 0 auto;
+}
+
 @media screen and (min-width: 1920px) {
 section.page-slice.u-tone-background-white {
 max-width: 1920px;
@@ -201,6 +283,7 @@ width: 500px;
 margin: 0 auto;
 }
 }
+
 @media screen and (min-width: 799px) {
 .order-one {
 order: 1;
@@ -232,7 +315,11 @@ left: 10px;
 scale: 3;
 top: 120px;
 }
+.belfar-logo {
+max-width: 270px;
 }
+}
+
 @media screen and (max-width: 529px) {
 #p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_gridItemImage > div > img {
 scale: 1;
