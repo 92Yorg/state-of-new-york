@@ -49,6 +49,15 @@
 		color: var(--white);
 	}
 
+	.program-card__title a {
+		font-size: 30px;
+	}
+
+	.program-card__actions>a:nth-child(2) {
+		display: none;
+	}
+
+
 	.stony-wrapper1 .program-card .program-card__body,
 	.stony-wrapper1 .program-card.is-type-talks-readings .program-card__body,
 	.stony-wrapper1
@@ -73,7 +82,11 @@
 		background: var(--black);
 	}
 
-	.stony-wrapper1 .program-card:hover .program-card__details,
+.stony-wrapper1 .program-card:hover .program-card__details,
+.stony-wrapper1 .program-card:hover .program-card__title a {
+	color: var(--black)
+}
+
 	.stony-wrapper1
 		.program-card.is-type-talks-readings:hover
 		.program-card__details,
@@ -95,7 +108,7 @@
 	}
 
 	.program-card:hover .program-card__actions .btn {
-		background-color: var(--92nymagenta);
+		background-color: var(--black);
 		color: var(--white);
 	}
 
@@ -137,71 +150,38 @@
 	}
 
 	/*Feature card control*/
-	#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard:hover {
+	.program-card:hover {
 		background: #fff !important;
 	}
 
-	div#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard:hover
-		p,
-	div#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard:hover
-		h2
-		> a {
-		color: #000;
-	}
 
-	#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard {
+	.program-card {
 		max-width: 580px;
 		margin: 0 auto;
 	}
-	#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard
-		> div
-		> div.program-card__details
-		> p.program-card__prefix {
+	.program-card__suffix, .program-card__prefix, .program-card__date-description {
 		font-size: 20px;
 	}
-	#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard
-		> div
-		> div.program-card__details
-		> h2
-		> a {
+	.program-card__title {
 		font-size: 30px;
 	}
-	#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard
-		> div
-		> div.program-card__details
-		> p.program-card__suffix {
-		font-size: 20px;
-	}
-	#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard
-		> div
-		> div.program-card__details
-		> p.program-card__date-description {
-		font-size: 20px;
-	}
-	#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_giMoreInfo {
+
+	.program-card__actions a {
 		font-size: 18px;
 	}
-	#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_giBuyTickets {
-		font-size: 18px;
-	}
-	.program-card:hover .program-card__actions .btn {
-		background: #000 !important;
-	}
+
+.program-card__actions:hover a {
+	background: var(--92nymagenta);
+		color: #fff;
+}
 
 	.program-card__actions {
 		visibility: visible !important;
 	}
 
 	/*card button control*/
-	#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_giMoreInfo,
-	#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_giBuyTickets {
+	.program-card__actions a {
 		background: #000;
-		color: #fff;
-	}
-
-	#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_giMoreInfo:hover,
-	#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_giBuyTickets:hover {
-		background: #990d61 !important;
 		color: #fff;
 	}
 
@@ -283,10 +263,6 @@ background: #000 !important;
 	}
 
 
-	/*hide buy now button*/
-	#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_giBuyTickets {
-		display: none;
-	}
 
 	/*center belfar logo*/
 	.belfar-logo {
@@ -320,12 +296,10 @@ background: #000 !important;
 	}
 
 	@media screen and (max-width: 799px) {
-		#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_gridItemImage {
+		.program-card__media {
 			clip-path: inset(14px 10px);
 		}
-		#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_gridItemImage
-			> div
-			> img {
+		.program-card__image {
 			scale: 2.6;
 			top: 70px;
 			left: 10px;
@@ -333,9 +307,7 @@ background: #000 !important;
 	}
 
 	@media screen and (max-width: 624px) {
-		#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_gridItemImage
-			> div
-			> img {
+		.program-card__image {
 			scale: 3;
 			top: 120px;
 		}
@@ -345,19 +317,17 @@ background: #000 !important;
 	}
 
 	@media screen and (max-width: 529px) {
-		#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_gridItemImage
-			> div
-			> img {
+		.program-card__image {
 			scale: 1;
 			top: 0px;
 			left: 0px;
 		}
-		#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard {
+		.program-card {
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
 		}
-		#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_gridItemImage {
+		.program-card__media {
 			margin: 0;
 			padding: 10px 8px 0px 10px;
 		}
@@ -367,7 +337,7 @@ background: #000 !important;
 		.program-card:not(.program-card--featured) .program-card__body {
 			width: calc(100% - 20px);
 		}
-		#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_giMoreInfo {
+		.program-card__actions a {
 			margin: 10px 10px 0px 0px;
 		}
 	}
