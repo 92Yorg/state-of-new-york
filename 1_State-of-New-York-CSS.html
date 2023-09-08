@@ -5,12 +5,14 @@
 	--92nymagenta: #990d61;
 	--92nyred: #ff5447;
 	--92nygold: #d7a95a;
-	--gold-lt: #F2EAD6;
+	--gold-lt: #f2ead6;
 	--white: #fff;
 	--black: #000;
 }
 
-.stony-wrapper1 .scrollable-area__navigation--styled-example .scrollable-area__navigation {
+.stony-wrapper1
+	.scrollable-area__navigation--styled-example
+	.scrollable-area__navigation {
 	background-color: var(--92nymagenta);
 }
 
@@ -32,19 +34,28 @@
 
 .stony-wrapper1 .program-card .program-card__details,
 .stony-wrapper1 .program-card.is-type-talks-readings .program-card__details,
-.stony-wrapper1 .program-card.is-type-continuing-education .program-card__details,
+.stony-wrapper1
+	.program-card.is-type-continuing-education
+	.program-card__details,
 .stony-wrapper1 .program-card.is-type-jewish-life .program-card__details,
-.stony-wrapper1 .program-card .program-card__title,
 .stony-wrapper1 .program-card.is-type-talks-readings .program-card__title,
-.stony-wrapper1 .program-card.is-type-continuing-education .program-card__title,
+.stony-wrapper1
+	.program-card.is-type-continuing-education
+	.program-card__title,
 .stony-wrapper1 .program-card.is-type-jewish-life .program-card__title,
 .stony-wrapper1 .program-card__title a {
 	color: var(--white);
 }
 
+.program-card:hover .program-card__body a, .program-card:hover .program-card__title a {
+	color: #000;
+}
+
 .stony-wrapper1 .program-card .program-card__body,
 .stony-wrapper1 .program-card.is-type-talks-readings .program-card__body,
-.stony-wrapper1 .program-card.is-type-continuing-education .program-card__body,
+.stony-wrapper1
+	.program-card.is-type-continuing-education
+	.program-card__body,
 .stony-wrapper1 .program-card.is-type-jewish-life .program-card__body {
 	border-color: var(--92nymagenta);
 }
@@ -57,17 +68,28 @@
 	background: var(--92nymagenta);
 }
 
-.stony-wrapper1 .program-card:hover,
 .stony-wrapper1 .program-card.is-type-talks-readings:hover,
 .stony-wrapper1 .program-card.is-type-continuing-education:hover,
-.stony-wrapper1 .program-card.is-type-jewish-life:hover {
+.stony-wrapper1 .program-card.is-type-jewish-life:hover,
+.stony-wrapper1 .program-card.is-type-talks-readings:hover .program-card__details {
 	background: var(--black);
 }
 
+.stony-wrapper1 .program-card:hover {
+	background-color: var(--white);
+}
+
 .stony-wrapper1 .program-card:hover .program-card__details,
-.stony-wrapper1 .program-card.is-type-talks-readings:hover .program-card__details,
-.stony-wrapper1 .program-card.is-type-continuing-education:hover .program-card__details,
-.stony-wrapper1 .program-card.is-type-jewish-life:hover .program-card__details {
+.stony-wrapper1 .program-card .program-card__title  {
+	color: var(--black);
+}
+
+.stony-wrapper1
+	.program-card.is-type-continuing-education:hover
+	.program-card__details,
+.stony-wrapper1
+	.program-card.is-type-jewish-life:hover
+	.program-card__details {
 	color: var(--white);
 }
 
@@ -98,8 +120,6 @@
 	}
 }
 
-
-
 .stony-wrapper2 .instructor-panel {
 	border: 1px solid #000;
 }
@@ -114,9 +134,9 @@
 }
 
 .scrollable-area__navigation-item {
-display: flex;
-align-items: center;
-justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .flex-grid__item {
@@ -124,58 +144,49 @@ justify-content: center;
 }
 
 /*Feature card control*/
-#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard:hover {
-background: #fff !important;
+.programCard:hover {
+	background: #fff !important;
 }
 
-div#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard:hover p, div#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard:hover h2>a {
-color: #000;
+.programCard:hover
+	p, .programCard:hover
+	h2
+	> a {
+	color: #000;
 }
 
-
-
-#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard {
+.programCard {
 	max-width: 580px;
-margin: 0 auto;
+	margin: 0 auto;
 }
-#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard > div > div.program-card__details > p.program-card__prefix {
-font-size: 20px;
+.program-card__suffix, .program-card__prefix, .program-card__date-description {
+	font-size: 20px;
 }
-#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard > div > div.program-card__details > h2 > a {
-font-size: 30px;
+.program-card__title--med h2 > a {
+	font-size: 30px;
 }
-#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard > div > div.program-card__details > p.program-card__suffix {
-font-size: 20px;
-}
-#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard > div > div.program-card__details > p.program-card__date-description {
-font-size: 20px;
-}
-#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_giMoreInfo {
-font-size: 18px;
-}
-#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_giBuyTickets {
-font-size: 18px;
+
+.program-card__actions>.btn {
+	font-size: 18px;
 }
 .program-card:hover .program-card__actions .btn {
-background: #000 !important;
+	background: #000 !important;
 }
 
 .program-card__actions {
-visibility: visible !important;
+	visibility: visible !important;
 }
-
 
 /*card button control*/
-#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_giMoreInfo, #p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_giBuyTickets {
-background: #000;
-color: #fff;
+.program-card__actions>.btn {
+	background: #000;
+	color: #fff;
 }
 
-#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_giMoreInfo:hover, #p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_giBuyTickets:hover {
-background: #990d61 !important;
-color: #fff;
+.program-card__actions>.btn:hover {
+	background: #990d61 !important;
+	color: #fff;
 }
-
 
 .line-break {
 	border: 1px solid #fff;
@@ -209,32 +220,24 @@ header h2,
 }
 .description-control {
 	max-width: 550px;
-margin: 0 auto;
-font-size: 20px;
+	margin: 0 auto;
+	font-size: 20px;
 }
-
-/*lower card section*/
-/*#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard, #p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard,
-#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard,
-#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard {
-background: #000 !important;
-}
-*/
 
 /*left-bar control*/
-.scrollable-area__navigation--styled-example .scrollable-area__navigation-list {
-margin-bottom: 420px;
+.scrollable-area__navigation--styled-example
+	.scrollable-area__navigation-list {
+	margin-bottom: 420px;
 }
-
 
 .js-popup-inline {
-	font-size: 14px;;
+	font-size: 14px;
 }
-.hero-imgae-sticky {
-		position: absolute;
-top: 90px;
-z-index: -1;
-max-width: 370px;
+.hero-image-sticky {
+	position: absolute;
+	top: 90px;
+	z-index: -1;
+	max-width: 370px;
 }
 footer {
 	position: relative;
@@ -242,30 +245,16 @@ footer {
 }
 
 .newmark-logo {
-max-width: 300px;
-margin: 0px auto 30px auto;
-display: block;
+	max-width: 300px;
+	margin: 0px auto 30px auto;
+	display: block;
 }
 
 .newmark-content {
-text-align: center;
-font-weight: 600;
-font-size: 33px;
-margin-bottom: 15px;
-}
-
-/*hide past events cards*/
-#form > div.global-container.has-breadcrumbs > section.page-slice.u-tone-background-white > section > div.stony-wrapper1 > div > div > div.scrollable-area__section-inner.u-tone-background-white > div > div > section:nth-child(1) > div {
-display: none;
-}
-
-#form > div.global-container.has-breadcrumbs > section.page-slice.u-tone-background-white > section > div.stony-wrapper1 > div > div > div.scrollable-area__section-inner.u-tone-background-white > div > div > section:nth-child(1) {
-display: none;
-}
-
-/*hide buy now button*/
-#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_giBuyTickets {
-display: none;
+	text-align: center;
+	font-weight: 600;
+	font-size: 33px;
+	margin-bottom: 15px;
 }
 
 /*center belfar logo*/
@@ -274,99 +263,100 @@ display: none;
 }
 
 @media screen and (min-width: 1920px) {
-section.page-slice.u-tone-background-white {
-max-width: 1920px;
-margin: 0 auto;
-}
-.scrollable-area__navigation {
-width: 500px;
-margin: 0 auto;
-}
+	section.page-slice.u-tone-background-white {
+		max-width: 1920px;
+		margin: 0 auto;
+	}
+	.scrollable-area__navigation {
+		width: 500px;
+		margin: 0 auto;
+	}
 }
 
 @media screen and (min-width: 799px) {
-.order-one {
-order: 1;
-}
-.order-two {
-order: 2;
-}
-.order-three {
-order: 3;
-}
-.mobile-title-control {
- margin: 30px auto 0 auto;
-}
+	.order-one {
+		order: 1;
+	}
+	.order-two {
+		order: 2;
+	}
+	.order-three {
+		order: 3;
+	}
+	.mobile-title-control {
+		margin: 30px auto 0 auto;
+	}
 }
 
 @media screen and (max-width: 799px) {
-#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_gridItemImage {
-clip-path: inset(14px 10px);
-}
-#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_gridItemImage > div > img {
-scale: 2.6;
-top: 70px;
-left: 10px;
-}
+	.program-card__media {
+		clip-path: inset(14px 10px);
+	}
+	.program-card__image {
+		scale: 2.6;
+		top: 70px;
+		left: 10px;
+	}
 }
 
 @media screen and (max-width: 624px) {
-#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_gridItemImage > div > img {
-scale: 3;
-top: 120px;
-}
-.belfar-logo {
-max-width: 270px;
-}
+	.program-card__image {
+		scale: 3;
+		top: 120px;
+	}
+	.belfar-logo {
+		max-width: 270px;
+	}
 }
 
 @media screen and (max-width: 529px) {
-#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_gridItemImage > div > img {
-scale: 1;
-top: 0px;
-left: 0px;
-}
-#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_pnl_programCard {
-flex-direction: column;
-align-items: center;
-justify-content: center;
-}
-#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_gridItemImage {
-margin: 0;
-padding: 10px 8px 0px 10px;
-}
-.program-card:not(.program-card--featured) .program-card__media {
-width: 400px;
-}
-.program-card:not(.program-card--featured) .program-card__body {
-width: calc(100% - 20px);
-}
-#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_giMoreInfo {
-margin: 10px 10px 0px 0px;
-}
+	.program-card__image  {
+		scale: 1;
+		top: 0px;
+		left: 0px;
+	}
+	.program-card {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.program-card__media {
+		margin: 0;
+		padding: 10px 8px 0px 10px;
+	}
+	.program-card:not(.program-card--featured) .program-card__media {
+		width: 400px;
+	}
+	.program-card:not(.program-card--featured) .program-card__body {
+		width: calc(100% - 20px);
+	}
+	.program-card__actions>.btn {
+		margin: 10px 10px 0px 0px;
+	}
 }
 
 @media screen and (max-width: 435px) {
-.program-card:not(.program-card--featured) .program-card__media {
-width: 350px;
-}
-}
-
-@media screen and (max-width: 405px) {
-.program-card:not(.program-card--featured) .program-card__media {
-width: 320px;
-}
+	.program-card:not(.program-card--featured) .program-card__media {
+		width: 350px;
+	}
 }
 
 @media screen and (max-width: 405px) {
-.program-card:not(.program-card--featured) .program-card__media {
-width: 320px;
+	.program-card:not(.program-card--featured) .program-card__media {
+		width: 320px;
+	}
 }
+
+@media screen and (max-width: 405px) {
+	.program-card:not(.program-card--featured) .program-card__media {
+		width: 320px;
+	}
 }
 
 @media screen and (max-width: 375px) {
-.program-card:not(.program-card--featured) .program-card__media {
-width: 300px;
-}
+	.program-card:not(.program-card--featured) .program-card__media {
+		width: 300px;
+	}
 }
 </style>
+
